@@ -8,53 +8,63 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <h1>Personal Portfolio</h1>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact" class="contact-btn">CONTACT</a>
+      </nav>
+    </div>
   </header>
-
   <main>
-    <section id="home">
-      <h1>Welcome to my Portfolio</h1>
-      <p>Showcasing my work and projects.</p>
-    </section>
-
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Professional with expertise in design and development.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Web Development</li>
-        <li>UI/UX Design</li>
-        <li>Project Management</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div>
-        <h3>Project 1</h3>
-        <p>Description of the project.</p>
+    <div class="grid-container">
+      <section class="card home">
+        <h2>HOME</h2>
+        <p>Welcome to my professional portfolio showcasing my work and projects.</p>
+      </section>
+      <section class="card about">
+        <h2>ABOUT</h2>
+        <p>Professional with expertise in design and development.</p>
+      </section>
+      <section class="card skills">
+        <h2>SKILLS</h2>
+        <ul>
+          <li>Web Development</li>
+          <li>UI/UX Design</li>
+          <li>Project Management</li>
+        </ul>
+      </section>
+      <div class="card image-placeholder">
+        <img src="placeholder.png" alt="Portfolio Image Placeholder">
       </div>
-      <div>
-        <h3>Project 2</h3>
-        <p>Description of the project.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>GitHub: <a href="#">github.com/yourusername</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-    </section>
+      <section class="card additional-skills">
+        <h2>SKILLS</h2>
+        <p>Additional skill descriptions go here.</p>
+      </section>
+      <section class="card additional-about">
+        <h2>ABOUT</h2>
+        <p>More about me and my experiences.</p>
+      </section>
+      <section class="card projects">
+        <h2>PROJECTS</h2>
+        <div>
+          <h3>Project 1</h3>
+          <p>Description of project 1</p>
+        </div>
+        <div>
+          <h3>Project 2</h3>
+          <p>Description of project 2</p>
+        </div>
+        <button>VIEW MORE</button>
+      </section>
+      <section class="card contact">
+        <h2>Contact</h2>
+        <p>GitHub: <a href="#">github.com/yourprofile</a></p>
+        <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+      </section>
+    </div>
   </main>
 </body>
 </html>

@@ -1,47 +1,86 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
   }
   
-  /* Header */
   header {
     background-color: #007bff;
     color: white;
     padding: 1rem;
   }
   
-  nav ul {
+  .header-container {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  nav a {
+  header nav a {
     color: white;
     text-decoration: none;
+    margin: 0 1rem;
   }
   
-  /* Main Layout */
-  main {
+  .contact-btn {
+    background-color: #ffc107;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Grid Layout */
+  .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 1rem;
   }
   
-  section {
-    background-color: #ffffff;
+  .card {
+    background-color: #007bff;
+    color: white;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
-  /* Contact Section */
-  #contact a {
-    color: #007bff;
-    text-decoration: none;
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .home,
+  .about,
+  .skills,
+  .projects,
+  .contact,
+  .image-placeholder,
+  .additional-skills,
+  .additional-about {
+    grid-column: span 2;
+  }
+  
+  .projects button {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Specific Adjustments */
+  .image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+  }
+  
+  .image-placeholder img {
+    max-width: 80%;
   }
   
