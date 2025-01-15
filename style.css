@@ -1,0 +1,47 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Main Layout */
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  section {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Section */
+  #contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
